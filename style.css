@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef7ee;
+  color: #1f3d2b;
+}
+
+.cabecalho {
+  background: linear-gradient(135deg, #1f7a3f, #6bbf59);
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.cabecalho h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cabecalho p {
+  font-size: 18px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  color: #1f7a3f;
+  margin-bottom: 15px;
+}
+
+.texto {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #b8cdb8;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #1f7a3f;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #155c2f;
+}
+
+.resultado p {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.destaque {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1f7a3f;
+}
+
+.dicas ul {
+  padding-left: 20px;
+}
+
+.dicas li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.rodape {
+  text-align: center;
+  padding: 20px;
+  background: #1f3d2b;
+  color: white;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 24px;
+  }
+
+  .cabecalho p {
+    font-size: 16px;
+  }
+}

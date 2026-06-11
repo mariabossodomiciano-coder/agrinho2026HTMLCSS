@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Irrigação Inteligente</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Calculadora de Irrigação Inteligente</h1>
+    <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Calcule o uso de água na plantação</h2>
+      <p class="texto">Preencha os dados abaixo para descobrir a quantidade aproximada de água necessária para irrigar sua área.</p>
+
+      <form id="formIrrigacao">
+        <label for="area">Área plantada em m²:</label>
+        <input type="number" id="area" placeholder="Ex: 100" required>
+
+        <label for="agua">Litros de água por m²:</label>
+        <input type="number" id="agua" placeholder="Ex: 5" required>
+
+        <label for="dias">Quantidade de dias:</label>
+        <input type="number" id="dias" placeholder="Ex: 30" required>
+
+        <button type="submit">Calcular</button>
+      </form>
+    </section>
+
+    <section class="card resultado">
+      <h2>Resultado</h2>
+      <div id="resultadoCalculo">
+        <p>O resultado aparecerá aqui após o cálculo.</p>
+      </div>
+    </section>
+
+    <section class="card dicas">
+      <h2>Dicas sustentáveis</h2>
+      <ul>
+        <li>Irrigue de manhã cedo ou no fim da tarde.</li>
+        <li>Evite desperdício de água.</li>
+        <li>Use sistemas de gotejamento quando possível.</li>
+        <li>Acompanhe a umidade do solo antes de irrigar.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Calculadora de Irrigação Inteligente © 2026</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
